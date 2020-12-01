@@ -1,0 +1,255 @@
+@font-face {
+  font-family: DancingScript-Regular;
+  src: url(../fonts/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: Rajdhani-Regular;
+  src: url(../fonts/Rajdhani-Regular.ttf);
+}
+
+h1,h2,h3
+{
+font-family:DancingScript-Regular;
+text-align:center;	
+}
+body
+{
+	margin:0;
+	padding:0;
+}
+h1{
+	font-size:45px;
+}
+h2{
+	font-size:35px;
+}
+p
+{
+	font-family:Rajdhani-Regular;
+	padding-left:20%;
+	padding-right:20%;
+	position:relative;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  
+  padding-left: 10px;
+  width: 15%;
+  background-color:#fffaea;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  left:0;
+  top:0;
+  z-index:1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding:20px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:#fef0c2;
+  color: Black;
+}
+
+li a:hover:not(.active) {
+  background-color:#fef0c2;
+  color: black;
+}
+#headimg
+{
+	width:100%;
+	height:92%;
+	margin:0;
+	padding:0;
+	
+	right:0px;
+	position:relative;
+	overflow:hidden;
+	z-index:0;
+}
+#loader
+{
+	margin:0;
+	padding:0;
+	top:-10px;
+}
+#headerText
+{
+	z-index:-2;
+	background-color:#fffaea;
+	text-align:center;
+}
+#hblock
+{
+	padding-top:70px;
+	padding-bottom:70px;
+	text-align:center;
+}
+#textdiv
+{
+	text-align:center;
+	padding-top:70px;
+	padding-bottom:70px;
+	background-color:#fef0c2;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color:#fffaea;
+} 
+.grid-item
+{
+	position:relative;	
+}
+#services
+{
+	position:relative;
+	text-align:center;
+	width:80%;
+	left:5%;
+	padding-bottom:50px;
+}
+#serv{
+	background-color:#fffaea;
+	padding:30px;
+}
+th
+{
+	padding:30px;
+		background-color:#fef0c2;
+		font-family: Rajdhani-Regular;
+}
+td
+{
+		padding:30px;
+}
+#dark
+{
+
+	background-color:#fef0c2;
+	font-family: Rajdhani-Regular;
+}
+#light
+{
+	background-color:#fffaea;
+	font-family: Rajdhani-Regular;
+}
+#price
+{
+	background-color:#ffeba8;
+	font-weight: bold;
+	font-famiy:DancingScript-Regular;
+	font-size:20px;
+}
+#bigfooter
+{
+	position:relative;
+	column-count:3;
+	padding:70px;
+	background-color:#ffeba8;
+}
+#footertext
+{
+	padding-left:35%;
+}
+#sp
+{
+	position:relative;
+	padding-left:40%;
+	padding:70px;
+	background-color:#fef0c2;
+	margin:0;
+
+}
+#ordering
+{
+	width:100%;
+		background-color:#fffaea;
+	font-family: Rajdhani-Regular;
+	position:relative;
+	margin:0;
+	padding-top:100px;
+	padding-bottom:50px;
+	
+}
+
+.forminput
+{
+	padding:10px;
+	
+	margin:20px;
+	text-align:left;
+	
+}
+label
+{
+	padding:20px;
+	
+}
+#timetablediv
+{
+	margin:0;
+	background-color:#fffaea;
+	font-family: Rajdhani-Regular;
+	position:relative;
+	padding:70px;
+	padding-left:20%;	
+}
+#timetable
+{
+	position:relative;
+	width:90%;
+}
+#bold
+{
+	font-weight:bold;
+}
+#contact
+{
+	background-color:#fffaea;
+	font-family: Rajdhani-Regular;
+	position:relative;
+	padding-left:20%;
+	padding:70px;
+
+	
+}
+#contacts
+{
+	position:relative;
+	box-shadow: 5px 10px #ffeba8;
+	
+}
+#aboutus
+{
+	position:relative;
+		padding-left:7%;
+}
+#aboutp
+{
+
+	column-count:2;
+}
+#aboutimg
+{
+ background-image: url("../img/salon2.jpg");
+margin-top:70px;
+
+height:500px; 
+}
+#select
+{
+	font-family: Rajdhani-Regular;
+	font-size:20px;
+	margin-bottom:70px;
+	margin-top:40px;
+}
