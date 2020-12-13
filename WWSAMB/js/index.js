@@ -1,5 +1,5 @@
 
-var cup=["asdre2","kjht5","93k5m6","910b3m","pym865"];
+var kupon=["asdre2","kjht5","93k5m6","910b3m","pym865"];
 
 
 function loading(obj)
@@ -32,18 +32,18 @@ function coupon()
 {
 var rand=Math.floor(Math.random() * 5); 
 
-document.getElementById("kupon").value=cup[rand];
-alert(cup[rand]);
+document.getElementById("kupon").value=kupon[rand];
+alert(kupon[rand]);
 
 }
-function validcup()
+function validkupon()
 {
 var i;
-var cupk=document.getElementById("kupon").value;
+var kuponkod=document.getElementById("kupon").value;
 for(i=0; i<5; i++)
 
 {
-if(cupk == cup[i])
+if(kuponkod == kupon[i])
 {
 alert("Kupon elfogadva, a szolgáltatás ára változott");
 return true;
@@ -54,33 +54,33 @@ return false;
 
 }
 
-var rowt;
-var cellt;
+var tablerow;
+var tablecell;
 function table()
 {
 var sel = document.getElementById("tablesp");
 var selected = sel.value;
 document.getElementById("ar").value=selected;
 }
-var Fname;
-var Lname;
-function fillT()
+
+
+function fillTable()
 {
 var Fullname=document.getElementById("frist-name").value;
-	if(document.getElementById('timetable').rows[rowt].cells[cellt].style.backgroundColor === "Bisque")
+	if(document.getElementById('timetable').rows[tablerow].cells[tablecell].style.backgroundColor === "Bisque")
 	{
 	alert("Ez az időpont már foglalt");
 	}
 	else
 	{
 	
-var fill= document.getElementById("timetable").rows[rowt].cells;
-	fill[cellt].innerHTML= Fullname;
-	document.getElementById('timetable').rows[rowt].cells[cellt].style.backgroundColor = "Bisque";
+var fill= document.getElementById("timetable").rows[tablerow].cells;
+	fill[tablecell].innerHTML= Fullname;
+	document.getElementById('timetable').rows[tablerow].cells[tablecell].style.backgroundColor = "Bisque";
 	var sel = document.getElementById("tablesp");
 	var selected = sel.value;
-	var val=validcup();
-	document.getElementById("valid").value = validcup();
+	var val=validkupon();
+	document.getElementById("valid").value = validkupon();
 	
 	if(val == true)
 	{
@@ -96,15 +96,15 @@ var fill= document.getElementById("timetable").rows[rowt].cells;
 }
 function clickRow(row)
 {
-rowt=row.rowIndex;
-document.getElementById("time").value=rowt;
+tablerow=row.rowIndex;
+document.getElementById("time").value=tablerow;
 
 
 
 }
 function clickcell(cell)
 {
-cellt=cell.cellIndex;
-document.getElementById("day").value=cellt;
+tablecell=cell.cellIndex;
+document.getElementById("day").value=tablecell;
 
 }

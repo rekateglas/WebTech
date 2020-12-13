@@ -43,7 +43,7 @@ border:2px solid white;
 <input class="forminput" id="valid" type="text" />
 <label style="text-align:left">Ár : </label>
 <input class="forminput" id="ar" name="ar"type="text" /><br>
-<input type="button" value="Kupon érvényesítés" onclick="fillT()" />
+<input type="button" value="Kupon érvényesítés" onclick="fillTable()" />
 <input type="submit" name="submit"value="Foglalás" />
 </form>
 
